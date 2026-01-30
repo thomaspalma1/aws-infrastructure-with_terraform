@@ -27,18 +27,18 @@ resource "aws_instance" "aws_instance_with_terraform_sg" {
 }
 
 resource "aws_security_group" "sg_ssh" {
-  ingress = {
+  ingress {
     cidr_blocks = ["0.0.0.0/0"]
-    protocol   = "tcp"
-    from_port  = 22
-    to_port    = 22
+    protocol    = "tcp"
+    from_port   = 22
+    to_port     = 22
   }
 
-  egress = {
+  egress {
     cidr_blocks = ["0.0.0.0/0"]
-    protocol   = "-1"
-    from_port  = 0
-    to_port    = 0
+    protocol    = "-1"
+    from_port   = 0
+    to_port     = 0
   }
 }
 
