@@ -16,7 +16,7 @@ resource "aws_instance" "aws_instance_with_terraform_ssh" {
 
 resource "aws_key_pair" "deployer" {
   key_name   = "aws_key"
-  public_key = "ssh-ed25519 AAAA-etc...[replace with the actual key you generated!]"
+  public_key = var.ssh_key
 }
 
 resource "aws_security_group" "sg_ssh" {
