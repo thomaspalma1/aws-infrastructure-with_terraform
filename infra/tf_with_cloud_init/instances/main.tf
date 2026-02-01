@@ -1,17 +1,17 @@
-resource "aws_instance" "lesson_06" {
-  ami           = "ami-097a2df4ac947655f"
-  instance_type = "t2.micro"
+resource "aws_instance" "aws_instance_with_terraform_cloud_init" {
+  ami           = "ami-06e3c045d79fd65d9"
+  instance_type = "t3.micro"
   key_name      = "aws_key"
   vpc_security_group_ids = [
     aws_security_group.sg_ssh.id,
     aws_security_group.sg_https.id,
     aws_security_group.sg_http.id
   ]
-  
+
   user_data = file("../scripts/apache-mkdocs.yaml")
 
   tags = {
-    Name                  = "Lesson_06-Cloud-Init"    
+    Name = "AWS-Instance-With-Cloud-Init"
   }
 }
 
