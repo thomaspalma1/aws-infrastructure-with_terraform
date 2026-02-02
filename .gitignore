@@ -37,3 +37,5 @@ override.tf.json
 terraform.rc
 /infra/ec2-ssh/keys
 /infra/tf_with_cloud_init/keys
+/infra/ec2/cloud_init/keys
+/infra/ec2/ssh/keys
