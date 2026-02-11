@@ -12,7 +12,7 @@ module "webserver-user2" {
   cidr_block = "10.0.0.0/16"
   ami        = "ami-081ac37fe26dacc98" # Debian
   # Remember, select an AMI that exists in your AWS region.
-  # If in doubt, use the AMI above (which is Amazon Linux) 
+  # If in doubt, use the AMI above (which is Debian) 
   # and the us-west-2 region for this user.
   instance_type  = "t3.micro"
   webserver_name = "User 2's"
