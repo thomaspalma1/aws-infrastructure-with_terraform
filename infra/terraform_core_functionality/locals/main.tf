@@ -16,7 +16,7 @@ provider "aws" {
 resource "aws_iam_user" "accounts_marketing" {
   for_each = local.accounts
   name     = each.key
-
+  tags     = local.common_tags
 }
 
 locals {
@@ -28,4 +28,13 @@ locals {
       "Denise"
     ]
   )
+}
+
+locals {
+  common_tags = {
+    Company      = "Widgets-R-Us"
+    Department   = "Marketing"
+    Time_created = timestamp()
+  }
+
 }
