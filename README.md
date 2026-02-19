@@ -20,11 +20,13 @@
    </p>
 </div>
 
-### About the project
+### About the project 📘
 
 This repository presents a collection of `AWS` infrastructure examples using **Terraform**, a leading tool for **infrastructure as code**. The goal of the project is to demonstrate essential **infrastructure-as-code** concepts, such as file organization, the use of providers and variables, as well as the provisioning and management of basic `AWS` resources. The content serves as a reference for simple environments and controlled experimentation. It is important to note that the directory structure used in this repository does not represent a production environment. **Production environments** require more **careful modeling and organization**. The focus of this repository is exclusively on **study and learning**.
 
-###  Usage
+---
+
+### Usage ⚙️
 
 To use the code in this repository, first clone the project to your machine using `git clone`. Then, navigate to the `infra/` directory, which contains all the infrastructure-related content.
 
@@ -38,8 +40,9 @@ To run any of the **Terraform** code in this repository, you must have **Terrafo
 > [!WARNING]
 > Some resources created by the code in this repository may result in charges to your **AWS account**. If you run these files, make sure you understand which services are being provisioned and remember to remove the resources using `terraform destroy` after testing to avoid unexpected costs.
 
+---
 
-### Important points to consider
+### Important points to consider ⚠️
 
 1. For the **Terraform** studies involving `cloud-init`, it was necessary to use **SSH keys**. If you want to run the code in this location, you will need to create the `keys` directory inside the `infra/ec2/cloud_init` path and generate the **SSH keys**, since it is not versioned in the repository. The `keys` directory only needs to be created if you want to test **SSH access** to the provisioned instances. Otherwise, it is not required.
 
