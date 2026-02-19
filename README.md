@@ -20,8 +20,9 @@
    </p>
 </div>
 
-### About the project 
-Description
+### About the project
+
+This repository presents a collection of `AWS` infrastructure examples using **Terraform**, a leading tool for **infrastructure as code**. The goal of the project is to demonstrate essential **infrastructure-as-code** concepts, such as file organization, the use of providers and variables, as well as the provisioning and management of basic `AWS` resources. The content serves as a reference for simple environments and controlled experimentation. It is important to note that the directory structure used in this repository does not represent a production environment. **Production environments** require more **careful modeling and organization**. The focus of this repository is exclusively on **study and learning**.
 
 ###  Usage
 
@@ -40,7 +41,7 @@ To run any of the **Terraform** code in this repository, you must have **Terrafo
 
 ### Important points to consider
 
-1. For the **Terraform** studies involving `cloud-init`, it was necessary to use **SSH keys**. If you want to run the code in this location, you will need to create the `keys` directory inside the `infra/ec2/cloud_init` path and generate the SSH keys, since it is not versioned in the repository. The `keys` directory only needs to be created if you want to test **SSH access** to the provisioned instances. Otherwise, it is not required.
+1. For the **Terraform** studies involving `cloud-init`, it was necessary to use **SSH keys**. If you want to run the code in this location, you will need to create the `keys` directory inside the `infra/ec2/cloud_init` path and generate the **SSH keys**, since it is not versioned in the repository. The `keys` directory only needs to be created if you want to test **SSH access** to the provisioned instances. Otherwise, it is not required.
 
 2. The `infra/ec2/ssh` directory is dedicated to studying connections to instances using SSH, exclusively through **SSH keys**. Inside this directory, you need to create a folder called `keys`, following a process similar to the one previously described in the `cloud-init` section. The `keys` directory is used to store the **SSH keys** that provide access to the `AWS` instances. **SSH keys** enable secure authentication without the need to enter a password on each login, making the process more convenient. As a security best practice, **SSH keys**, especially private keys, are not versioned in this repository. Therefore, to run the code or access the instances via **SSH**, each user must generate and configure their own keys locally. If you do not want to use **SSH** access, this step is not mandatory.
 
