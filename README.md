@@ -32,10 +32,10 @@ To use the code in this repository, first clone the project to your machine usin
 
 Inside the `infra/` directory, you will find **two main subdirectories**:
 
- - **`ec2`**: Contains examples of simple code written in **Terraform**, focused on the **AWS EC2 service**. These files are intended for creating and configuring EC2 instances, serving as a foundation for learning and running initial tests with **Terraform** on AWS.
+ - **`ec2`**: Contains examples of simple code written in **Terraform**, focused on the **AWS EC2 service**. These files are intended for creating and configuring **EC2 instances**, serving as a foundation for learning and running initial tests with **Terraform** on `AWS`.
  - **`terraform_core_functionality`**: In this directory, I explore more specific and fundamental concepts of **Terraform**, such as file structure, variables, outputs, providers, resources, and other important aspects of the tool.
 
-To run any of the **Terraform** code in this repository, you must have **Terraform** properly installed on your machine. In addition, since AWS is the cloud provider used, you need to have an active AWS account with permissions to create and manage the resources used in the examples.
+To run any of the **Terraform** code in this repository, you must have **Terraform** properly installed on your machine. In addition, since `AWS` is the cloud provider used, you need to have an active `AWS` account with permissions to create and manage the resources used in the examples.
 
 > [!WARNING]
 > Some resources created by the code in this repository may result in charges to your **AWS account**. If you run these files, make sure you understand which services are being provisioned and remember to remove the resources using `terraform destroy` after testing to avoid unexpected costs.
